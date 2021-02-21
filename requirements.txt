@@ -36,7 +36,6 @@ pyrogram
 redis
 nekos.py
 tswift
-pyowm
 tabulate
 parsel
 pyrogram
