@@ -9,7 +9,7 @@
          "RASHMIKA"
       ],   
    "repository": "https://github.com/ALENTL/UltimateFilterBot",
-   "logo": "https://64.media.tumblr.com/0b9df3c98abd7506f0aa20c7ae11cb44/15b7ca8e73e46fcc-e4/s640x960/8c4da729e10aaff950d29eaefd8e222aad5de164.jpg",
+   "logo": "https://telegra.ph/file/1ed503f954d7d1fa0477b.jpg",
    "addons": [
     {
          "options": {
@@ -52,11 +52,11 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1343957402"
+         "value": "1312054275"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "UserName"
+         "value": "ALEN_TL"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: FOCUS MOVIES. If this ever points to saitama support than consider you made an enemy.",
@@ -86,7 +86,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "660565862 459034222 189005567 346981140 367222759"
+         "value": "1312054275"
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -100,22 +100,22 @@
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "459034222 189005567 660565862 346981140 367222759"
+         "value": "1312054275"
       },
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "615304572"
+         "value": "1312054275"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
-         "value": ""
+         "value": "1312054275"
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": ""
+         "value": "1312054275"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
@@ -139,7 +139,7 @@
       "No_LOAD": {
          "description": "Dont load these modules cause they shit, space separation",
          "required": false,
-         "value": "cleaner rss connection"
+         "value": "cleaner rss"
       }, 
       "BL_CHATS": {
          "description": "List of chats you want blacklisted.",
@@ -151,7 +151,7 @@
          "value": "True"
       },
       "DONATION_LINK": {
-         "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
+         "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to ALEN",
          "required": false,
          "value": "https://www.paypal.me/ALENTL"
       },
