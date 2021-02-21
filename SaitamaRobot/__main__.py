@@ -69,6 +69,8 @@ HELP_STRINGS = """
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nഈ പറഞ്ഞിരിക്കുന്ന commandകൾ എല്ലാം  / അല്ലെങ്കിൽ ! വെച്ച് ഉപയോഗിക്കാവുന്നതാണ്...\n")
 
+SAITAMA_IMG = "https://telegra.ph/file/ca03921aadf6f4e4fab68.jpg"
+
 DONATE_STRING = """Heya, glad to hear you want to donate! This bot was created by @ALEN_TL ...
 It took lots of work for [my creator](t.me/ALEN_TL) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
@@ -179,13 +181,24 @@ def start(update: Update, context: CallbackContext):
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
-else:
+        else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="👥Group👥", url="https://t.me/FJ_Chat"), InlineKeyboardButton(text="🔔Channel🔔", url="https://t.me/joinchat/ROzD9Y6z4Yxfl2kt")]]))
+            update.effective_message.reply_photo(
+                SAITAMA_IMG,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(context.bot.first_name)),
+                parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup(
+                    [[
+                        InlineKeyboardButton(
+                            text=" Group ",
+                            url="https://t.me/FJ_Chat"),
+                         InlineKeyboardButton(
+                             text=" Channel ",
+                             url="https://t.me/SenkuUpdates")
+                    ]]))
 
     else:
         update.effective_message.reply_text("ഹായ് മച്ചാൻ,  എന്താണ്??")
